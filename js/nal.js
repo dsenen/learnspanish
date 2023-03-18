@@ -1,5 +1,5 @@
-// This is the variable that generates the nmbers in words
-var numeroALetras = (function() {
+// This is the variable that generates the numbers in words
+const numeroALetras = (function() {
     function Unidades(num) {
 
         switch (num) {
