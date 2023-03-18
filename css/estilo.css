@@ -1,0 +1,149 @@
+html, body {
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+}
+
+p {
+  margin: 5px 2%;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#instructions {
+  font-size: 2em;
+}
+
+p.argh {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px auto;
+}
+
+ul, li {
+  text-align: left;
+}
+
+#butt {
+  border-radius: 3px;
+  font-size: 1.6em;
+  margin: 3%;
+  padding: 1%;
+  color: white;
+  border-width: 0px;
+  background-color: #4bb056;
+}
+
+#butt[type=button]:hover {
+  background-color: #3E8847;
+}
+
+#container {
+  border-radius: 40px;
+  background-color: #f2f2f2;
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.navbar {
+  font-size: 1.3em;
+  border-radius: 0px;
+}
+
+#number {
+  font-size: 10vw;
+  text-align: center;
+}
+
+#feedBack {
+  font-size: 1.8em;
+}
+
+.feedbackImage {
+  position: absolute;
+  top: 350px;
+  left: 65%;
+  width: 100px;
+  height: 100px;
+  animation: feedBackImage 0.4s;
+  animation-iteration-count: 3;
+  animation-fill-mode: both;
+}
+
+@keyframes feedBackImage {
+  0%   {top: 350px; left: 65%; height: 100px; width: 100px;}
+  25%  {top: 350px; left: 64%; height: 120px; width: 120px;}
+  50%  {top: 350px; left: 65%; height: 100px; width: 100px;}
+  75%  {top: 350px; left: 64%; height: 120px; width: 120px;}
+  100% {top: 350px; left: 65%; height: 100px; width: 100px;}
+}
+
+.clapA {
+  position: absolute;
+  top: 350px;
+  left: 65%;
+  width: 100px;
+  height: 100px;
+  animation: handsSizeChange 0.5s;
+  animation-iteration-count: 5;
+  animation-fill-mode: both;
+}
+
+@keyframes handsSizeChange {
+  0%   {top: 330px; left: 65%; height: 100px; width: 100px;}
+  25%  {top: 380px; left: 65%; height: 100px; width: 120px;}
+  50%  {top: 330px; left: 65%; height: 120px; width: 100px;}
+  75%  {top: 380px; left: 65%; height: 100px; width: 120px;}
+  100% {top: 330px; left: 65%; height: 100px; width: 100px;}
+}
+
+.talkNow {
+  background-color: skyblue;
+  animation: talkNowChange 0.5s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes talkNowChange {
+  from {
+    background-color: skyblue;
+  }
+  to {
+    background-color: royalblue;
+  }
+}
+
+.charging {
+  background-color: #ffa69e;
+  animation: chargingChange 2.5s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes chargingChange {
+  from {
+    background-color: #ffa69e;
+  }
+  to {
+    background-color: #ff686b;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+
+  h1 {
+  margin-top: 2%;
+  }
+  #container {
+    background-color: #f2f2f2;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #number {
+    font-size: 20vw;
+  }
+}

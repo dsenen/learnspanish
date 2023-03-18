@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>¡¡Di los números!!</title>
+        <meta name="author" content="David Senén Ruiz">
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="icon" href="images/numbico5.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="handlerbarsNavbar">
+            <script id="basic-template1" type="text/x-handlebars-template">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="{{link00}}">{{name00}}</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{link01}}">{{name01}}</a></li>
+                            <li><a href="{{link02}}">{{name02}}</a></li>
+                            <li><a href="{{link03}}">{{name03}}</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{name04}}<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{link05}}">{{name05}}</a></li>
+                                    <li><a href="{{link06}}">{{name06}}</a></li>
+                                    <li><a href="{{link06a}}">{{name06a}}</a></li>
+                                    <li><a href="{{link06b}}">{{name06b}}</a></li>
+                                    <li><a href="{{link06c}}">{{name06c}}</a></li>
+                                    <li><a href="{{link06d}}">{{name06d}}</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{name07}}<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                   <li><a href='{{link08}}'>{{name08}}</a></li>
+                                   <li><a href='{{link09}}'>{{name09}}</a></li>
+                                   <li><a href='#'>{{name10}}</a></li>
+                                   <li><a href='{{link11}}'>{{name11}}</a></li>
+                                   <li><a href='{{link12}}'>{{name12}}</a></li>
+                                   <li><a href='{{link13}}'>{{name13}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>        
+            </script>
+        </div>
+
+    <div id="instrucciones">
+        <h1 id="headSentence"></h1>
+        <div id="container">
+            <p class="argh">¡Pulsa el botón y di el número que ves en la pantalla!</p>
+            <button type="button" id="butt" value="100">¡Empezar!</button>
+            <p id="number"></p>
+            <p id="feedBack"></p> 
+            <div id='clapFB'></div>
+        </div>
+    </div>
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/scriptSpeechR.js" type="module"></script>
+    <footer>
+        <p>Authored by David Senén Ruiz &copy; 2021</p>
+    </footer>
+    </body>
+</html>
