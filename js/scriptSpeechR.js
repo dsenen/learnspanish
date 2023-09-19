@@ -147,7 +147,11 @@ function numberGenerator () {
 
 function checkAnswer(a, b) {
 
-	if (a == b) {
+	let numberA = numeroALetras(a);
+
+    let numberB = b.replace(/\./g, '');
+
+	if (numberA == b.toUpperCase() || a == numberB) {
 		removeRobotImage();
 		document.querySelector('#number').innerHTML = randomNumber;
 		let feedbackImage = imagesLinks[Math.floor(Math.random() * imagesLinks.length)];
